@@ -1,0 +1,36 @@
+<!--<html>
+  <head>
+    <title>My First Quest</title>
+  </head>
+  <body>
+    <h1>Headings are (h1-h6)</h1>
+    <h1>Main Title:</h1>
+    <h2>Welcome to My Developer Journey</h2>
+    <br>
+    <h1>Sub Title:</h1>
+    <h2>Landen Arms</h2>
+    <br>
+    <p>This is a paragraph.</p>
+    <p>I am becoming a developer.</p>
+    <br>
+    <h2>Hyperlink:</h2>
+    <a href="https://google.com">Go to Google</a>
+    <br>
+    <h1>Image:</h1>
+    <img src="https://via.placeholder.com/150" />
+    <br>
+    <h1>Unordered List:</h1>
+    <ul>
+      <li>Sword</li>
+      <li>Shield </li>
+      <li>Potion</li>
+    </ul>
+    <h2>Ordered List:</h2>
+    <ol>
+      <li>Quests</li>
+      <li>Skills</li>
+      <li>Adeventures</li>
+    </ol>
+    <br>
+  </body>
+</html>-->
