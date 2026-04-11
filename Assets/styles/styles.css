@@ -74,7 +74,6 @@ header {
 }
 
 section {
-  background-color: #1e293b; /* Slightly lighter background for sections */
   margin: 20px 0; /* Add vertical spacing between sections */
   padding: 20px; /* Add padding for spacing */
   border-radius: 10px; /* Rounded corners for a softer look */
