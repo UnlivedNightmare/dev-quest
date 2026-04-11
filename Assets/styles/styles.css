@@ -1,0 +1,95 @@
+body {
+  background-color: #0f172a; /* Dark background color */
+  color: white; /* White text color for contrast */
+  font-family: 'Georgia', serif; /* Clean and modern font */
+  margin: 0; 
+  padding: 20px; 
+}
+
+header {
+  background-color: #1e293b; /* Slightly lighter background for header */
+  padding: 20px; /* Add padding for spacing */
+  text-align: center; /* Center the header text */
+}
+
+.naruto-section {
+  background: linear-gradient(135deg, #F62D01 0%, #F07404 100%); /* Fiery Orange Gradient */
+  color: #fff; /* White text color for contrast */
+  padding: 40px; 
+  border-radius: 10px;
+  border: 4px solid #FFB902; /* Added Amber accent for contrast */
+  box-shadow: 0 10px 20px rgba(0,0,0,0.5);
+  font-family: 'Georgia', serif; /* Bold font suitable for Naruto */
+  text-align: center; 
+}
+
+.luffy-section {
+  /* Rich Gold Gradient */
+  background: linear-gradient(135deg, #fce38a 0%, #f3a12f 50%, #d48b11 100%); 
+  
+  /* Text and Padding */
+  color: #3b1c00; /* Dark Brown text color for contrast */
+  padding: 40px; 
+  border-radius: 10px; 
+  
+  /* Premium Feel */
+  border: 4px solid #ffcc00; /* Added Gold accent for contrast */
+  box-shadow: 0 10px 20px rgba(0,0,0,0.5), inset 0 0 10px rgba(255,255,255,0.4); 
+  font-family: 'Georgia', serif; 
+  text-align: center; 
+}
+
+.naruto-image-section, .luffy-image-section {
+  background: linear-gradient( 
+    to bottom, 
+    #1F214D 0%,    /* Dark Sky */
+    #BF3475 30%,   /* Pink Horizon */
+    #EE6C45 45%,   /* Orange Sun line */
+    #50366F 50%,   /* Water Horizon Line */
+    #0B486B 100%   /* Deep Water */
+  );
+  text-align: center; /* Center the image within the section */
+}
+
+.akatsuki-section {
+  background: linear-gradient(100deg, #000 30%, red 50%); /* Black to Red gradient for a dramatic effect */
+  color: #fff; /* White text color for contrast */
+  padding: 40px; 
+  border-radius: 10px;
+  border: 4px solid #ff6f61; /* Added Coral accent for contrast */
+  box-shadow: 0 10px 20px rgba(0,0,0,0.5);
+  font-family: 'Georgia', serif; /* Bold font suitable for Akatsuki */
+  text-align: center; /* Center the text within the section */
+}
+
+.baroqueworks-section {
+  background: linear-gradient(135deg, #3970a8 0%, #bdc3c7 100%); /* Blue to Silver gradient for a sophisticated look */
+  color: #ecf0f1; /* Light text color for contrast */
+  padding: 40px; 
+  border-radius: 10px; 
+  border: 4px solid #3498db; /* Added Blue accent for contrast */
+  box-shadow: 0 10px 20px rgba(0,0,0,0.5);
+  font-family: 'Georgia', serif; /* Elegant font suitable for Baroque Works */
+  text-align: center; /* Center the text within the section */
+}
+
+section {
+  background-color: #1e293b; /* Slightly lighter background for sections */
+  margin: 20px 0; /* Add vertical spacing between sections */
+  padding: 20px; /* Add padding for spacing */
+  border-radius: 10px; /* Rounded corners for a softer look */
+  transition: 0.3s ease-in-out; /* Smooth transition for hover effect */
+}
+
+img {
+  border-radius: 10px; /* Rounded corners for images */
+  margin: 10px 0; /* Add vertical spacing around images */
+}
+
+h1, h2, h3 {
+  color: #38bdf8 ; /* Lighter text color for headings */
+}
+
+section:hover {
+  transform: scale(1.02); /* Slightly enlarge the section on hover for interactivity */
+}
