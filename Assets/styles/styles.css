@@ -1,61 +1,156 @@
+html {
+  scroll-behavior: smooth; /* Enable smooth scrolling for anchor links */
+}
+
+.active {
+  transform: scale(1.05); /* Slightly enlarge the section when active */
+  box-shadow: 0 20px 40px rgba(0,0,0,0.8); /* Enhance the shadow for active sections */
+}
+
+.abilities {
+  display: none; /* Hide the abilities list by default */
+}
+
+.abilities.show {
+  display: block; /* Show the abilities list when the 'show' class is added */
+}
+
+.clickable {
+  cursor: pointer; /* Change cursor to pointer for clickable elements */
+}
+
+.navbar {
+  background-color: #020617; /* Dark background for the navbar */
+  padding: 15px; /* Add padding for spacing */
+  position: sticky; /* Make the navbar sticky */
+  top: 0; /* Stick to the top of the page */
+  z-index: 1000; /* Ensure the navbar is above other content */
+  box-shadow: 0 4px 10px rgba(0,0,0,0.6); /* Add shadow for depth */
+}
+
+.nav-links {
+  list-style: none; /* Remove default list styling */
+  display: flex; /* Use flexbox to arrange links in a row */
+  gap: 30px; /* Add space between links */
+  justify-content: center; /* Center the links horizontally */
+  padding: 0; /* Remove default padding */
+}
+
+.nav-links a {
+  color: #38bdf8; /* Light blue text color for links */
+  text-decoration: none; /* Remove underline from links */
+  font-weight: bold; /* Make links bold */
+  font-family: 'Georgia', serif; /* Elegant font for links */
+  transition: all 0.2s ease; /* Smooth transition for hover effect */
+}
+
+.nav-links a:hover {
+  color: white; /* Change link color on hover for better visibility */
+  transform: scale(1.1); /* Slightly enlarge the link on hover */
+}
+
+.container {
+  max-width: 1100px; /* Limit the width of the container */
+  margin: 0 auto; /* Center the container */
+  padding: 20px; /* Add padding for spacing */
+}
+
+main {
+  width: 100%; /* Limit the width of the main content */
+  margin: 0 auto; /* Center the main content */
+}
+
 body {
   background-color: #0f172a; /* Dark background color */
   color: white; /* White text color for contrast */
-  font-family: 'Georgia', serif; /* Clean and modern font */
-  margin: 0; 
-  padding: 20px; 
+  font-family: 'Arial', sans-serif; /* Clean and modern font */
+  margin: 0; /* Remove default margin */
+  padding: 0; /* Add padding for spacing */
 }
 
 header {
-  background-color: #1e293b; /* Slightly lighter background for header */
+  background-color: #1e2a3d; /* Slightly lighter background for header */
   padding: 20px; /* Add padding for spacing */
   text-align: center; /* Center the header text */
+}
+
+.naruto-section:hover,
+.luffy-section:hover,
+.akatsuki-section:hover,
+.baroqueworks-section:hover {
+  transform: scale(1.02); /* Slightly enlarge the section on hover */
+  box-shadow: 0 15px 30px rgba(0,0,0,0.7); /* Enhance the shadow on hover */
 }
 
 .naruto-section {
   background: linear-gradient(135deg, #F62D01 0%, #F07404 100%); /* Fiery Orange Gradient */
   color: #fff; /* White text color for contrast */
-  padding: 40px; 
-  border-radius: 10px;
+  padding: 40px; /* Add padding for spacing */
+  border-radius: 10px; /* Rounded corners for a softer look */
   border: 4px solid #FFB902; /* Added Amber accent for contrast */
-  box-shadow: 0 10px 20px rgba(0,0,0,0.5);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.5); /* Added shadow for depth */
   font-family: 'Georgia', serif; /* Bold font suitable for Naruto */
-  text-align: center; 
+  text-align: center; /* Center the text within the section */
 }
 
 .luffy-section {
   /* Rich Gold Gradient */
-  background: linear-gradient(135deg, #fce38a 0%, #f3a12f 50%, #d48b11 100%); 
-  
-  /* Text and Padding */
+  background: linear-gradient(135deg, #fce38a 0%, #f3a12f 50%, #d48b11 100%); /* Text and Padding */
   color: #3b1c00; /* Dark Brown text color for contrast */
   padding: 40px; 
-  border-radius: 10px; 
-  
-  /* Premium Feel */
+  border-radius: 10px; /* Premium Feel */
   border: 4px solid #ffcc00; /* Added Gold accent for contrast */
-  box-shadow: 0 10px 20px rgba(0,0,0,0.5), inset 0 0 10px rgba(255,255,255,0.4); 
-  font-family: 'Georgia', serif; 
-  text-align: center; 
+  box-shadow: 0 10px 20px rgba(0,0,0,0.5), inset 0 0 10px rgba(255,255,255,0.4); /* Added inner glow for a premium feel */
+  font-family: 'Georgia', serif; /* Elegant font suitable for Luffy */
+  text-align: center; /* Center the text within the section */
 }
 
-.naruto-image-section, .luffy-image-section {
-  background: linear-gradient( 
-    to bottom, 
-    #1F214D 0%,    /* Dark Sky */
-    #BF3475 30%,   /* Pink Horizon */
-    #EE6C45 45%,   /* Orange Sun line */
-    #50366F 50%,   /* Water Horizon Line */
-    #0B486B 100%   /* Deep Water */
-  );
-  text-align: center; /* Center the image within the section */
+.image-container {
+  background-color: black; /* Solid black background for a bold contrast */
+  border-radius: 15px; /* Rounded corners for a softer look */
+  padding: 20px; /* Add padding around the images */
+  display: flex; /* Use flexbox to arrange images in a row */
+  gap: 20px; /* Add space between images */
+  justify-content: center; /* Center the images horizontally */
+}
+
+.image-container img {
+  width: 100%; /* Make images responsive */
+  max-width: 400px; /* Set a maximum width for images */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 10px; /* Rounded corners for images */
+}
+
+.character-info {
+  max-width: 500px; /* Limit the width of the character info */
+}
+
+.character-card {
+  display: flex; /* Use flexbox to arrange image and info side by side */
+  gap: 20px; /* Add space between image and info */
+  align-items: center; /* Vertically center the image and info */
+  justify-content: flex-start; /* Center the content horizontally */
+  margin: 20px 0; /* Add spacing between character cards */
+}
+
+@media (max-width: 769px) {
+  .character-card {
+  flex-direction: column; /* Stack image and info vertically on smaller screens */
+  }
+}
+
+.character-card img {
+  width: 200px; /* Set a fixed width for character images */
+  height: auto; /* Maintain aspect ratio */
+  max-width: 100%; /* Ensure images are responsive */
+  border-radius: 10px; /* Rounded corners for images */
 }
 
 .akatsuki-section {
   background: linear-gradient(100deg, #000 30%, red 50%); /* Black to Red gradient for a dramatic effect */
   color: #fff; /* White text color for contrast */
-  padding: 40px; 
-  border-radius: 10px;
+  padding: 40px; /* Add padding for spacing */
+  border-radius: 10px; /* Rounded corners for a softer look */
   border: 4px solid #ff6f61; /* Added Coral accent for contrast */
   box-shadow: 0 10px 20px rgba(0,0,0,0.5);
   font-family: 'Georgia', serif; /* Bold font suitable for Akatsuki */
@@ -87,8 +182,5 @@ img {
 
 h1, h2, h3 {
   color: #38bdf8 ; /* Lighter text color for headings */
-}
-
-section:hover {
-  transform: scale(1.02); /* Slightly enlarge the section on hover for interactivity */
+  font-family: 'Georgia', serif; /* Elegant font for headings */
 }
